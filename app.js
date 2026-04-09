@@ -22,6 +22,10 @@ dbConnection();
 
 app.use(express.json());
 
+// app.use("/api/v1/users", userRoutes);
+// app.use("/api/v1/admin", adminRoutes);
+// app.use("/api/v1/documents", documentsRoutes);
+
 // app.use(errorHandler);
 app.get("/", (req, res) => {
   res.json("Doc_Gen_Backend");
